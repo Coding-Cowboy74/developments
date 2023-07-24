@@ -19,15 +19,16 @@ forception(people, alphabet);
 
 
 function forception(people, alphabet) {
-    var newAlphabet = alphabet.split("");
-    
-
+    var newAlphabet = alphabet.split("").join("");
+    //var newPeople = people.toString().split("").join(":");
     for (let i = 0; i < people.length; i++) {
-        newArr.push(people[i]);
+        newArr.push(people[i] + ":");
         for (let k = 0; k < newAlphabet.length; k++) {
-            newArr.push(newAlphabet[k]);
+            newArr.push('"' + newAlphabet[k] + '"');
         }
     }
-    console.log(newArr)
+    let displayResults = newArr.toString();
+    console.log(displayResults)
+    
 }
 
