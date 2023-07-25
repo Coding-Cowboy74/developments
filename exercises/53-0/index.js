@@ -29,3 +29,40 @@ findMiddleIndex("Hello World") // => 5  */
 
 //  capitalize("hey friends! practice practice practice!") // -> "Hey Friends! Practice Practice Practice!"
 
+// Function calls 
+
+//capilizeAndLowercase("hello");
+//roundDown("kajsfjdalk");
+//findTheMiddleIndex("this is a test string");
+//findTheFirstHalf("this is another testing string");
+
+//1. 
+function capilizeAndLowercase(greeting) {
+  var x = greeting.toUpperCase();
+
+  console.log(x + greeting);
+}
+//2. 
+function roundDown(sumNumber) {
+    var test = Math.floor(sumNumber.length / 2);
+
+    console.log(test);
+}
+//3.
+function findTheMiddleIndex(text) {
+    var middle = text.length;
+    var rounded = Math.floor(middle);
+
+    console.log(rounded);
+}
+
+//4.
+function findTheFirstHalf(text2) {
+    var count = text2.length / 2; 
+    var str1 = text2.slice(0, count);
+    var str2 = text2.slice(count);
+    
+    console.log(str1.toUpperCase() + str2.toLowerCase());
+}
+
+//4.
