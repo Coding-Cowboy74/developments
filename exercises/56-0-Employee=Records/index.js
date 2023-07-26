@@ -20,3 +20,34 @@ The constructor function will have a method called PRINTEMPLOYEEFORM that will p
 
 4. Enter the generated employees into the employee array
 */
+
+
+let employees = [];
+
+function Employee(name, jobTitle, Salary, status = "Full-Time") {
+    this.emppName = name;
+    this.empJob = jobTitle;
+    this.empSalary = Salary;
+    this.empStatus = status;
+
+
+    this.PrintEmployeeForm = function() {
+        return "Name: " + name + "\nJob Title: " + jobTitle + "\nSalary: " + Salary + "Status: " + status;
+    }
+
+  
+}
+
+const steve = new Employee("Steven", "Full Stack Developer", "$80,000");
+employees.push(steve);
+console.log(steve.PrintEmployeeForm());
+
+const billy = new Employee("Billy", "Teacher", "$40000", "Part-Time");
+employees.push(billy);
+console.log(billy.PrintEmployeeForm());
+
+const Sarah = new Employee("Sarah", "Marine Biologist", "$55,000", "Contract");
+employees.push(Sarah);
+console.log(Sarah.PrintEmployeeForm());
+
+//console.log(employees);       <------ testing the employees array to make sure that the data is really there
