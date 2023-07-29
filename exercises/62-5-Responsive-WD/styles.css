@@ -1,0 +1,21 @@
+/*  Colors that are to be used in the div blocks for styling
+
+    #F5C6D6
+    #EE2E84
+    #85CFD8
+    #8DC63F
+    #E76E34
+
+    media queries - 768px and above is fullscreen on larger displays
+    media queries - below 768px the color must expand full screen
+
+IMPORTANT TIPS while using "inline-block: 
+
+    - it's easiest to get the even white "spacing" by actually using thick, white border around the shapes. 
+    - in order to use percentage widths (like width: 50%) and not have them wrap, you'll add the following line to the top of your CSS
+
+    {
+        box-sizing: border-box;
+        font-size: 0px;
+    }
+    */
