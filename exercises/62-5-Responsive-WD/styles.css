@@ -1,10 +1,10 @@
 /*  Colors that are to be used in the div blocks for styling
 
-    #F5C6D6
-    #EE2E84
-    #85CFD8
-    #8DC63F
-    #E76E34
+    #F5C6D6 - light pink
+    #EE2E84 - dark pink
+    #85CFD8 - light blue
+    #8DC63F - lime green
+    #E76E34 - rust orange
 
     media queries - 768px and above is fullscreen on larger displays
     media queries - below 768px the color must expand full screen
@@ -19,3 +19,62 @@ IMPORTANT TIPS while using "inline-block:
         font-size: 0px;
     }
     */
+    body {
+        box-sizing: border-box;
+        font-size: 0;
+    }
+
+    main {
+        width: 100%;
+        display: inline-block;
+    }
+
+    div {
+        border: 1px white solid;
+        height: 30px;
+    }
+
+    .light-pink {
+        background-color: #F5C6D6;
+    }
+
+    .dark-pink {
+        background-color: #EE2E84;
+    }
+
+    .light-blue {
+        background-color: #85CFD8;
+    }
+
+    .lime-green {
+        background-color: #8DC63F;
+    }
+
+    .rust-orange {
+        background-color: #E76E34;
+    }
+ 
+
+/*      Media Queries       */
+
+@media only screen and (min-width: 768px) {
+    .dark-pink {
+        width: 24.86%;
+        display: inline-block;   
+    }
+
+    .light-blue {
+        width: 49.8%;
+        display: inline-block;
+    }
+
+    .lime-green {
+        width: 74.8%;
+        display: inline-block;
+    }
+
+    .rust-orange {
+        width: 24.8%;
+        display: inline-block;
+    }
+} 
