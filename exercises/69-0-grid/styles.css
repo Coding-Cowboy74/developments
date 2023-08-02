@@ -1,0 +1,40 @@
+body {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+div {
+    height: 2rem;
+}
+/* ID's styling */
+
+#red {
+    background-color: red;
+    grid-column: 1 / 7;
+}
+
+#blue {
+    background-color: blue;
+    grid-column: 7 / -1;
+}
+
+#green {
+    background-color: green;
+    grid-column: 1 / 4;
+}
+
+#purple {
+    background-color: purple;
+    grid-column: 4 / -1;
+}
+
+#yellow {
+    background-color: yellow;
+    grid-column: 1 / -1;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
