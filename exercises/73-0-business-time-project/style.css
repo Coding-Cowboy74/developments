@@ -1,3 +1,139 @@
-body {
-    background-color: #FFEAC2FF;
+* {
+    box-sizing: border-box;
+
 }
+
+/* for the main or home page */
+
+body {
+    background-color: white;
+    line-height: 1.6rem;
+    font-size: 16px;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: aqua;
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.bkround {
+    background-image: linear-gradient(45deg, yellow, purple);
+    height: 100px;
+
+}
+
+header p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom: 3rem;
+    line-height: 2.6rem;
+}
+
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    padding-right: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.mobile-footer {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-footer p {
+    color: white;
+    font-size: 12px;
+}
+
+.footer-social-media {
+    text-align: center;
+}
+
+.seperators-css {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li {
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+.pck-details p {
+    margin: 0;
+}
+
+
+
+
+/*  Home page media query   */
+
+/*15.6 Desktop 1240 px or bigger */
+
+@media screen and (min-width: 77.5em) {
+    h1 {
+        font-size: 6rem;
+        line-height: 1.6;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .bkround p {
+        padding-top: 2.5rem;
+        font-size: 5rem;
+    }
+
+    nav ul li {
+        font-size: 1.5rem;
+    }
+}
+
+/* for the about page */
+
+/* for the gallery page */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
