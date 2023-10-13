@@ -23,12 +23,9 @@ write a function that takes a num1 and num2 and returns whether num1 is divisibl
     console.log(isDivisible(15, 4)) // --> false
 
 */
+let numbersArray = [];
 
-
-
-function largest([]) {
-    
-}
+for (let i = 0; i < numbersArray.len)
 
 console.log(isDivisible(4,2));
 console.log(isDivisible(9, 3));
