@@ -1,6 +1,8 @@
 
 let readlineSync = require("readline-sync");
 
-let name = readlineSync.question("What is your name, please? ");
 
-console.log(name);
+console.log("The Colossal RPG Game");
+console.log("Welcome to the classic style RPG game, this will excite your if you love classing keyboard style games!");
+
+let playerName = readlineSync.question("Please enter players name! ");
