@@ -14,6 +14,7 @@ let playerName = readlineSync.question("Please enter players name! ");
 //  Welcoming the user to the game 
 console.log(`Hello, ${playerName} Welcome to the game We hope your enjoyy your time here.`);
 
+//  Coded and initialized the constructor function with properties
 class Character {
    constructor(name, hitPoints, manaPoints, magicPoints, inventory) {
     this.name = name;
@@ -23,17 +24,32 @@ class Character {
     this.inventory = inventory;
    }
 
+   //   The function here is simple, just to return a log message with the characters inventory
    printInventory() {
     console.log(`Your current inventory is: ${this.inventory}`);
    }
 }
 
+//   Here is the list of the characters equipment inventory list, made for the type of character and if villian or hero
 let equipment = ["double cannon rocket", "AK-49 Pulse rifle", "laser survival knife", "static gravitational mines", "ammunitions", "48 automatic hand pulse gun"];
 let npcHeklomantler = ["claws", "fangs", "laser eyes"]
+let npcVoochooaminion = ["tail whip", "sonic scream", "mirage"];
+let npcDemonStrife = ["soul snatcher", "mezmorizer", "wing strike"];
 
-
+//  Instance of the character constructor for the hero character 
 const player = new Character(playerName, 100, 50, 50, equipment);
 
-const enemy1 = new Character("Heklomantler", 100, 20, 20, npcHeklomantler);
+//  Instances of the character constructor for the vilians of different spieces of types. 
+const lizardSpecies = new Character("Heklomantler", 100, 20, 20, npcHeklomantler);
+const gremlinSpecies = new Character("Voochooaminion", 50, 20, 20, npcVoochooaminion)
+const demonSpecies = new Character("DemonStrife", 100, 50, 20, 20, npcDemonStrife);
 
-console.log(enemy1);
+// variable for the list of all the enemies
+let gameEnemies = [lizardSpecies, gremlinSpecies, demonSpecies]
+
+const getRandomNumber(min, max) => {
+   return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+player.printInventory();
+
