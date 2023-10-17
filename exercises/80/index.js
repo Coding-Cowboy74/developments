@@ -8,17 +8,22 @@
     console.log(largest([-13, 40, 3, 0, 19, 22])) // --> 40
 
 */
-let arr = [6, 13, 250,3];
-let max = [0];
+let max = 0;
 
-function largest(arr) {
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
+
+function largest(myarr) {
+    for (let i = 0; i < myarr.length; i++) {
+        if (myarr[i] > max) {
+            max = myarr[i];
+            
         }
     }
+    return max;
 }
 
+
+console.log(largest([3, 5, 2, 8, 1]));
+console.log(largest([-13, 40, 3, 0, 19, 22]));
 console.log(largest([6, 13, 250, 3]));
 /*
 Write a function that takes an arrary of words and a character and returns each word that has that character present.
@@ -27,8 +32,23 @@ Write a function that takes an arrary of words and a character and returns each 
     console.log(letterWithStrings(["$hello", "%%%%", "test!", "!"])) // --> ["$hello", "test!"]
     console.log(letterWithStrings(["#3", "$$$", "C%4!", "Hey!", "!"])) // --> ["C%4!", "Hey!"]
     console.log(letterWithStrings(["yellow", "green", "up", "down", "dog", "h"])) // --> []
+*/
+function letterWithStrings(wordArr, character) {
+    let characterArr = [];
+    for (let i = 0; i < wordArr.length; i++) {
+        if (wordArr[i].includes(character)) {
+            characterArr.push(wordArr[i]);
+        }
+    }
+    return characterArr;
+}
+
+console.log(letterWithStrings(["$hello!", "%%^%%", "test!"], "!"));
+console.log(letterWithStrings(["#3", "$$$", "C%4!", "Hey!"], "!"));
+console.log(letterWithStrings(["yellow", "green", "up", "down", "dog"], "h"));
 
 
+/*
 write a function that takes a num1 and num2 and returns whether num1 is divisible by num2. 
 
 // test data 
@@ -37,9 +57,6 @@ write a function that takes a num1 and num2 and returns whether num1 is divisibl
     console.log(isDivisible(15, 4)) // --> false
 
 */
-let numbersArray = [];
-
-for (let i = 0; i < numbersArray.len)
 
 console.log(isDivisible(4,2));
 console.log(isDivisible(9, 3));
