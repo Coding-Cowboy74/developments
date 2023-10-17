@@ -7,6 +7,20 @@
     console.log(largest([3, 5, 2, 8, 1])) // --> 8
     console.log(largest([-13, 40, 3, 0, 19, 22])) // --> 40
 
+*/
+let arr = [6, 13, 250,3];
+let max = [0];
+
+function largest(arr) {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+}
+
+console.log(largest([6, 13, 250, 3]));
+/*
 Write a function that takes an arrary of words and a character and returns each word that has that character present.
 
 // test data
