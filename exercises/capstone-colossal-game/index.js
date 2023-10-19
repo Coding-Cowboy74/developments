@@ -39,7 +39,7 @@ let npcVoochooaminion = ["tail whip", "sonic scream", "mirage"];
 let npcDemonStrife = ["soul snatcher", "mezmorizer", "wing strike"];
 
 //  Instance of the character constructor for the hero character 
-const player = new Character(playerName, 85, 10, 50, equipment);
+const player = new Character(playerName, 5, 10, 50, equipment);
 
 //  Instances of the character constructor for the vilians of different spieces of types. 
 const lizardSpecies = new Character("Heklomantler", 10, 2, 20, npcHeklomantler);
