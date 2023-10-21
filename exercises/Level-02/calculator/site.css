@@ -1,0 +1,53 @@
+
+/*      I have divided up the CSS into 2 sections, one section is the controls and the other section is the classes being styled.       */
+
+input {
+    margin-bottom: 14px;
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.4; 
+}
+
+button {
+    width: 70px;
+    height: 30px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 60px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/*  Here are all the class level styling    */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.math-container {
+    border: 2px solid black;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.color-A {
+    background-color: hsl(240, 100%, 80%);
+}
+
+.color-B {
+    background-color: rgb(255, 217, 179);
+}
+
+.color-C {
+    background-color: #ecffb3;
+}
