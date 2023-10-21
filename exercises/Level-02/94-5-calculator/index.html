@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <h1>Web Based Calculator</h1>
+    <h2>Come test out the math functions for yourself!</h2>
+    <br>
+    <form name="math-form">
+        <p>This section is dedicated to adding values up and displaying
+            the sum.</p>
+        <div>
+            <span>Please enter a numberical value 1 - 99: </span>
+             <input type="text" name="addValue1"/> <br>
+             <span>Please enter a numberical value 1 - 99: </span>
+             <input type="text" name="addValue2"/><br>
+             <button id="btnAdd">Submit</button>
+             <p id="answerText"></p>
+        </div>
+
+        <p>This section is dedicated to subtracting values up and displaying
+            the difference.</p>
+        <div>
+            <span>Please enter a numberical value 1 - 99: </span>
+             <input type="text" name="subValue1"/> <br>
+             <span>Please enter a numberical value 1 - 99: </span>
+             <input type="text" name="subValue2"/><br>
+             <button id="btnSub">Submit</button>
+             <p id="subAnswer"></p>
+        </div>
+
+        <p>This section is dedicated to multiplying values up and displaying
+            the product.</p>
+        <div>
+            <span>Please enter a numberical value 1 - 99: </span>
+             <input type="text" name="multValue1"/> <br>
+             <span>Please enter a numberical value 1 - 99: </span>
+             <input type="text" name="multValue2"/><br>
+             <button id="btnMult">Submit</button>
+            <p id="multiAns"></p>
+        </div>
+    </form>
+</body>
+</html>
