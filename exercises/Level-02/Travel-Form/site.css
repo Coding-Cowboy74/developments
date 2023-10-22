@@ -1,4 +1,4 @@
-
+/*  Element based Styles    */
 input {
     margin-bottom: 10px;
 }
@@ -24,6 +24,8 @@ button {
 form {
     font-size: 18px;
 }
+
+/*  Class based Styles   */
 
 .form-container {
     display: flex;
