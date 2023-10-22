@@ -9,8 +9,58 @@
     <title>XYZ Travel Form</title>
 </head>
 <body>
+    <!--    The header section designed for the banner of the pages.    -->
     <header>
-        <img src="img/xyz-airline.jpg" alt="XYZ Airlines">
+        <div class="banner">
+            <img src="img/xyz-airline.jpg" alt="XYZ Airlines" height="200" width="70%">
+        </div>
+        
+
+        <h1>XYZ Airlines</h1>
+        <h2>Welcome to our page, please be sure to complete and submit the form with all your preferences.</h2>
+
+        <div class="form-container">
+            <form>
+                <span class="form-text">First Name: </span>
+                <input type="text" name="fName"/><br>
+
+                <span class="form-text">Last Name: </span>
+                <input type="text" name="lName"><br>
+
+                <span class="form-text">Customers Age: </span>
+                <input type="number" name="custAge"><br>
+
+                <span class="form-text">Gender: </span>
+                <input type="radio" name="gender"/> <span class="gender-text">Male</span>
+                <input type="radio" name="gender"/> <span class="gender-text">Female</span><br>
+                <!--    Below here is the area for the travel locations and you can select 3 options. You are actually required to select 3 more is possible but no less.   -->
+                <span class="form-text">Travel Location: </span><br>
+            
+                <input type="checkbox" name="locations"/>
+                <span>Denver</span>
+                <input type="checkbox" name="locations"/>
+                <span>Chicago</span>
+                <input type="checkbox" name="locations"/>
+                <span>New  York City</span>
+                <input type="checkbox" name="locations"/>
+                <span>Dallas</span>
+                <input type="checkbox" name="locations"/>
+                <span>Washington</span>
+                <input type="checkbox" name="locations"/>
+                <span>Las Vegas</span>
+                <input type="checkbox" name="locations"/>
+                <span>Florida</span>
+                <input type="checkbox" name="locations"/>
+                <span>Minneapolis</span>
+                <input type="checkbox" name="locations"/>
+                <span>Honolulu</span>
+                <input type="checkbox" name="locations"/>
+                <span>Houston</span>
+                <input type="checkbox" name="locations"/>
+                <span>Utah</span>
+                
+            </form>
+        </div>
     </header>
 </body>
 </html>
