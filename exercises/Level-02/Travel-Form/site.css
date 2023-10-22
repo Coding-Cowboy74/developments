@@ -1,0 +1,36 @@
+
+input {
+    margin-bottom: 10px;
+}
+
+input[type=number] {
+    width: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+button {
+    width: 5rem;
+    height: 1.5rem;
+}
+
+form {
+    font-size: 18px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    text-align: center;
+}
