@@ -1,0 +1,23 @@
+Google Fonts: 
+    Poppins: for the paragraphs and text based content
+    Link:
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    CSS Rule:
+        font-family: 'Poppins', sans-serif;
+
+    Nunito: for the footer
+    Link: 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    CSS Rule:
+        font-family: 'Nunito', sans-serif;
+    Roboto: for the headering/headings
+    Link: 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    CSS Rule: 
+        font-family: 'Roboto', sans-serif;

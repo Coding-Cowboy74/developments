@@ -9,6 +9,18 @@ form {
 
 h1, h2 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
 }
 
 input {
@@ -17,6 +29,7 @@ input {
 
 p {
     text-align: left;
+    font-family: 'Poppins', sans-serif;
 }
 
 .img-container {
