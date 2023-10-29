@@ -1,10 +1,15 @@
 img {
-    width: 300px;
+    width: 200px;
 }
 
 form {
-    width: 95%;
+    width: 100%;
+    margin-right: 3rem;
+}
+
+main {
     margin: 0 auto;
+    margin-right: 4rem;
 }
 
 h1, h2 {
@@ -32,12 +37,40 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+button {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-left: 2.5em;
+    background-color: hsl(225, 100%, 55%);
+    color: white;
+}
+
+footer p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+footer p a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p a:hover {
+    color: blue;
+    font-size: 16px;
+}
+
 .img-container {
     text-align: center;
 }
 
-.flex-container {
-    display: flex;
+.form-container {
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -46,12 +79,22 @@ p {
     margin-bottom: 10px;
 }
 
-.form-container {
-    align-items: center;
-    justify-content: center;
-}
-
 .img-card-price {
     font-weight: bolder;
     font-size: 1.8rem;
 }
+
+.flex-container {
+    margin-left: 4rem;
+}
+
+.contact-phones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+
+
