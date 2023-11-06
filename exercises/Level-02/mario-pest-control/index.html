@@ -31,7 +31,7 @@
                     <h2>You find them, we will catch them!!!</h2>
 
                     <div class="form-container">
-                        <form name="control-form">
+                        <form name="controlForm">
                             <div class="card">
                                 <div class="img-container">
                                     <img src="img/goomba.PNG" alt="Goomba">
@@ -45,9 +45,9 @@
                                 <div class="img-card">
                                     <span class="img-card-price">5 Coins</span><br>
                                     <span>How many caught:</span>
-                                    <input type="number" name="goombaAmount" value="goombaAmount"><br>
+                                    <input type="number" name="goombaAmount"><br>
                                     <span>Total Billing Costs: </span>
-                                    <input type="text" name="goombaBilling"/>
+                                    <p id="goombaTotal">0</p>
                                     <button id="calcGoombas">Submit</button>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                     <input type="number" name="bombsAmount" value="bombsAmount"><br>
                                     <span>Total Billing Costs: </span>
                                     <input type="text" name="bombslling"/>
-                                    <button>Submit</button>
+                                    <button id="calcBombs">Submit</button>
                                 </div>
                             </div>
 
@@ -82,7 +82,7 @@
                                     <input type="number" name="cheepAmount" value="cheepAmount"><br>
                                     <span>Total Billing Costs: </span>
                                     <input type="text" name="cheepBilling"/>
-                                    <button>Submit</button>
+                                    <button id="calcSheeps">Submit</button>
                                 </div>
                             </div>
                         </form>
