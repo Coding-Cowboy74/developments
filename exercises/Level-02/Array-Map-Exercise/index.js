@@ -27,12 +27,12 @@ function stringItUp(arr){
 function capitalizeNames(arr){
     // your code here 
     const capNames = arr.map(function(name) {
-        return name;
+        return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
     })
     return capNames;
   }
   
-  //console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); 
+  console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); 
   
   // Output:
   // ["John", "Jacob", "Jingleheimer", "Schmidt"]
