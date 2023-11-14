@@ -77,8 +77,7 @@ function totalVotes(arr) {
 function flatten(arr) {
     // your code here
     const fixingArrs = arr.reduce(function(final, current) {
-        final.push(current);
-        return final;
+        return final.concat(current);
     }, [])
     return fixingArrs;
  }
@@ -115,9 +114,34 @@ function flatten(arr) {
 function voterResults(arr) {
    // your code here
    const result = arr.reduce(function(final, votes) {
+    if (votes.age > 18 && votes.age <= 25) {
+        final.numYoungPeople++;
 
-   }, {})
-   return voterResults;
+        if (votes.voted) {
+            final.numYoungVotes++;
+        }
+    }
+
+    if (votes.age >=26 && votes.age <=35) {
+        final.numMidsPeople++;
+
+        if (votes.voted) {
+            final.numMidVotesPeople++;
+        }
+    }
+
+    if (votes.age >= 36 && votes.age <= 55) {
+        final.numOldsPeople++;
+
+        if (votes.voted) {
+            final.numOldVotesPeople++;
+        }
+    }
+
+    
+    return final;
+   }, {numYoungPeople: 0, numYoungVotes: 0, numMidsPeople: 0, numMidVotesPeople: 0, numOldsPeople: 0, numOldVotesPeople: 0})
+   return result;
 }
 
 console.log(voterResults(voters)); // Returned value shown below:
