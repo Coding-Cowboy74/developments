@@ -1,14 +1,6 @@
 
-// 1a) Write a function that retruns the sum of two numbers. Throw an error if either argument is not of the data type NUMBER.
+// // 1a) Write a function that retruns the sum of two numbers. Throw an error if either argument is not of the data type NUMBER.
 function sum(x, y){
-    //check data types first and throw error
-    // if (typeof x !== "number" && typeof y !== "number") {
-    //     console.log("ERROR: Data must be in numbers, try again.");
-        
-    // }
-    // else {
-    //     return x + y;
-    // }
 
     try {
         if (typeof x === "number" && typeof y === "number") {
@@ -25,7 +17,7 @@ function sum(x, y){
     }
   }
 
-// 1b) Call the "sum" function inside a "try" block using "1" and "2" as arguments. Use the "console.log" within a "catch" block to inform the user of the error.
+// // 1b) Call the "sum" function inside a "try" block using "1" and "2" as arguments. Use the "console.log" within a "catch" block to inform the user of the error.
 try {
     console.log(sum(1, "2"));
 }
@@ -42,7 +34,25 @@ catch(err) {
   var user = {username: "sam", password: "123abc"};
 function login(username, password){
   //check credentials
+
+  try {
+    if (username !== user.username) {
+        throw new Error("ERROR: Incorrect username entered, try again!");
+    } else if (password !== user.password){
+        throw new Error("ERROR: Incorrect password entered, try again!");
+    }
+
+    else {
+        console.log("Login is successfull");
+    }
+  }
+
+  catch(err) {
+    console.log(err);
+  }
 }
 
 
 // 2b) Call the "login" function within a "try" block. In one instance use the correct credentials, and in another use incorrect ones. Make sure you see the appropriate message!
+
+console.log(login("sam", "123abc"));
