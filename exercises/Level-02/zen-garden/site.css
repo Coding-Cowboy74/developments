@@ -1,0 +1,14 @@
+
+#grid-style {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-item {
+    border: 1px solid black;
+}
+
+header {
+    grid-column: 1 / 13;
+    
+}
