@@ -1,7 +1,27 @@
 
 #grid-style {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(7, 100px);
+    /* definitions of template areas:
+        h - header section 
+        d - designs/alternate 
+        a - about/enlightment section 
+        w - writer/coder copyright section 
+        b - benefits/participation section 
+        l - links/downloads section 
+        r - requirements section 
+        e - empty
+        c - authors/copyright section 
+        f - footer section 
+        */
+    grid-template-areas: 
+        "h h h h h h h h d d d d"
+        "a a a a a a a a w w w w"
+        "b b b b b b b b l l l l"
+        "r r r r r r r r e e e e"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
 }
 
 .grid-item {
@@ -9,6 +29,42 @@
 }
 
 header {
-    grid-column: 1 / 13;
-    
+    grid-area: h;
+}
+
+.designs-sec {
+    grid-area: d;
+}
+
+.about-sec {
+    grid-area: a;
+}
+
+.writers-sec {
+    grid-area: w;
+}
+
+.benefits-sec {
+    grid-area: b;
+}
+
+.links-sec {
+    grid-area: l;
+}
+
+.require-sec {
+    grid-area: r;
+}
+
+.empty-sec {
+    grid-area: e;
+}
+
+.authors-sec {
+    grid-area: c;
+}
+
+footer {
+    grid-area: f;
+    border: 1px solid black;
 }
