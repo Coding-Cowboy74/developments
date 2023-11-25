@@ -27,12 +27,49 @@
     font-size: 28px;
     text-shadow: 3.5px 4.25px hsl(60, 100%, 25%);
     color: hsl(216, 100%, 70%);
+    background-color: red;
 
-    transition: font-size 2s linear 2s, text-shadow 1s ease-in 2s, color 1s linear;
+    transition: font-size 2s linear 2s, text-shadow 1s ease-in 2s, color 1s linear, background-color 4s ease-in;
+}
+
+.green {
+    width: 493px;
+    transition: width 1s linear, background-color 2s ease-in, color 3s ease-out;
 }
 
 .green:hover {
+ width: 250px;
+ background-color: green;
+ color: hsl(60, 100%, 55%);
+
+
+}
+
+.yellow {
+    width: 493px;
+    height: 19px;
+
+    transition: width 1s ease-in, height 1s ease-in, background-color 4s ease;
+}
+
+.yellow:hover {
     width: 250px;
-    
-    transition: width 1s linear;
+    height: 200px;
+    background-color: yellow;
+}
+
+.pink:hover {
+    background-color: pink;
+    text-shadow: 3.5px 4.25px rgb(250, 250, 251);
+    font-size: 40px;
+
+    transition: font-size 3s ease, text-shadow 5s linear, background-color 4s ease-in;
+}
+
+.violet:hover {
+    background-color: rgb(231, 39, 231);
+    color: rgb(250, 250, 251);
+    box-shadow: 11px 15px;
+
+    transition: background-color 4s ease, color 3s ease-in, box-shadow 5s linear;
 }
