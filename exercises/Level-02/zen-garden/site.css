@@ -2,7 +2,7 @@
 #grid-style {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(7, 100px);
+    
     /* definitions of template areas:
         h - header section 
         d - designs/alternate 
@@ -16,12 +16,22 @@
         f - footer section 
         */
     grid-template-areas: 
+        "h h h h h h"
+        "d d d d d d"
+        "a a a a a a"
+        "b b b b b b"
+        "r r r r r r"
+        "c c c c c c"
+        "f f f f f f"
+        "w w w w w w"
+        "l l l l l l"
+        /*
         "h h h h h h h h d d d d"
         "a a a a a a a a w w w w"
         "b b b b b b b b l l l l"
         "r r r r r r r r e e e e"
         "c c c c c c c c c c c c"
-        "f f f f f f f f f f f f";
+        "f f f f f f f f f f f f";*/
 }
 
 .grid-item {
@@ -30,10 +40,20 @@
 
 header {
     grid-area: h;
+    background-image: url(./img/huntington.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left;
+    height: 12rem;
 }
 
 .designs-sec {
     grid-area: d;
+    background-image: url(./img/huntington.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 4rem;
 }
 
 .about-sec {
@@ -67,4 +87,20 @@ header {
 footer {
     grid-area: f;
     border: 1px solid black;
+}
+
+
+/*  Media Queries */
+
+@media screen and (min-width: 69em) {
+    #grid-style {
+        grid-template-areas: 
+        "h h h h h h h h d d d d"
+        "a a a a a a a a w w w w"
+        "b b b b b b b b l l l l"
+        "r r r r r r r r e e e e"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+    }
+    
 }
