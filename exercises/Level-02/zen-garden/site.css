@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 #grid-style {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -45,6 +47,8 @@ header {
     background-size: 100% 100%;
     background-position: left;
     height: 12rem;
+    padding-left: 4.5rem;
+    padding-top: 4rem;
 }
 
 .designs-sec {
@@ -58,25 +62,53 @@ header {
 
 .about-sec {
     grid-area: a;
+    padding: 0 15px;
 }
 
 .writers-sec {
     grid-area: w;
+    
     background-color: #d9e3dc;
+    display: flex;
+    
+}
+
+.writers-sec ul {
+    list-style-type: none;
+    flex-wrap: nowrap;
+    
+}
+
+.writers-sec ul li a {
+    text-decoration: none;
 }
 
 .benefits-sec {
     grid-area: b;
     background-color: rgba(138,188,159,0.5);
+    padding: 0 15px;
 }
 
 .links-sec {
     grid-area: l;
     background-color:  rgba(138,188,159,0.5);
+    display: flex;
+}
+
+.links-sec ul {
+    list-style-type: none;
+    font-size: 12px;
+    
+    flex-wrap: nowrap;
+}
+
+.links-sec ul li a {
+    text-decoration: none;
 }
 
 .require-sec {
     grid-area: r;
+    padding: 0 15px;
 }
 
 .empty-sec {
@@ -89,6 +121,7 @@ header {
     background-repeat: no-repeat;
     background-position: bottom;
     height: 11em;
+    padding: 0 15px;
 }
 
 footer {
@@ -104,10 +137,33 @@ footer {
 
 body {
     font-family: 'Libre Baskerville', sans-serif;
+    margin: 0 auto;
+    padding: 0;
 }
 
 h1, h2, h3 {
     font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    padding-bottom: 0;
+    color: #fff;
+}
+
+h2 {
+    font-size: 16px;
+    padding-top: 0;
+    color: #fff;
+}
+
+.fa-brands {
+    color: white;
+    flex-wrap: nowrap;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 40px;
+    margin-left: 14px;
 }
 
 
