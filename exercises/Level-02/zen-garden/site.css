@@ -62,14 +62,17 @@ header {
 
 .writers-sec {
     grid-area: w;
+    background-color: #d9e3dc;
 }
 
 .benefits-sec {
     grid-area: b;
+    background-color: rgba(138,188,159,0.5);
 }
 
 .links-sec {
     grid-area: l;
+    background-color:  rgba(138,188,159,0.5);
 }
 
 .require-sec {
@@ -82,11 +85,29 @@ header {
 
 .authors-sec {
     grid-area: c;
+    background-image: url(./img/koi.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 11em;
 }
 
 footer {
     grid-area: f;
     border: 1px solid black;
+    height: 8em;
+    background-color: #134347;
+}
+
+.social-container {
+    display: flex;
+}
+
+body {
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 
