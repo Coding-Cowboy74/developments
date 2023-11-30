@@ -36,11 +36,40 @@
                 "Basil-Fresh": "2 tablespoons minced fresh basil"
             },
             "Description": "Sliders are the perfect finger food for any get-together, and this flavorful chicken parmesan version won't disappoint -- Nick Iverson, Denver, Colorado"
-        }
+        }  
     ],
 
     "cold sandwiches": [
+        {
+            "Menu Item": "Cranberry-Walnut Chicken Salad Sandwiches",
+            "Ingredients": {
+                "Mayo": "1/2 cup mayonnaise", 
+                "Mustard": "2 tablespoons honey Dijon mustard",
+                "Chicken": "2 cups cubed rotisserie chicken",
+                "Cheese": "1 cup shredded Swiss cheese",
+                "Celery": "1/2 cup chopped celery",
+                "Cranberry": "1/2 cup dried cranberries", 
+                "Walnuts": "1/4 cup chopped walnuts",
+                "Parsley": "1/2 teaspoon dried parsley flakes",
+                "Lettuce": "8 lettuce leaves",
+                "Bread": "16 slices pumpernickel bread"
+            },
+            "Description": "I made these simple yet special cranberry walnut chicken salad sandwiches for a birthday party. Tangy cranberries and crunchy celery pep up the chicken, Lefover turkey works well too -- Shannon Tucker, Land O' Lakes, Florida"
+        },
 
+        {
+            "Menu Item": "Turkey Club Sandwich",
+            "Ingredients": {
+                "Bread": "3 slices white bread",
+                "Mayo": "2 tablespoons mayonnaise",
+                "Lettuce": "2 leaves Romain lettuce, green leaf, or iceberg",
+                "Tomato": "2 slices fresh tomato",
+                "bacon": "4 strips bacon, fried crisp",
+                "Turkey": "3 to 4 ounces cooked turkey",
+                "Cranberry Sauce": "2 tablespoons cranberry sauce (optional)"
+            },
+            "Description": "This turkey club sandwich is good with a side of macaroni or potato salad. You can also make up some homemade chips as a side."
+        }
     ],
 
     "hot sandwiches": [
@@ -52,6 +81,6 @@
     ],
 
     "drinks": [
-        
+
     ]
 }
