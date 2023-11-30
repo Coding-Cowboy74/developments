@@ -104,10 +104,55 @@
     ],
 
     "desserts": [
+        {
+            "Menu Item": "Our Best Cheesecake",
+            "Ingredients": {
+                "Graham Craker": "1 3/4 cups Honey Maid Graham Crackers Crumbs",
+                "Butter": "1/3 cup butter, melted",
+                "Sugar": "1 1/4 cups sugar, divided",
+                "Cream Cheese": "3 (8 ounce) packages Philadelphia Cream Cheese, softened",
+                "Sour Cream": "1 cup Breakstone's or Knudsen Sour Cream",
+                "Vanilla": "2 teaspoons vanilla",
+                "Eggs": "3 large eggs",
+                "Cherry Pie Filling": "1 (21 ounce) can cherry pie filling"
+            },
+            "Description": "This cheesecake recipe is our best recipe for cheesecake with a rich and creamy texture and cherry topping for an indulgent dessert that is also easy to make! It is the perfect dessert to serve at your next party."
+        },
 
+        {
+            "Menu Item": "Coconut Chocolate Rice Krispie Treats",
+            "Ingredients": {
+                "Butter": "1/4 cups butter",
+                "Marshmallows": "1 (10 ounce) package large marshmallows",
+                "Crispy Rice Cereal": "5 cups chocolate flavored crispy rice cereal",
+                "Coconut": "1/3 cups sweetened flaked coconut"
+            },
+            "Description": "I made these coconut chocolate Rice Krispies Treats to change up the normal every day recipe a little bit one day when my 6 year old son and I were looking through the kitchen to see what we could eat."
+        }
     ],
 
     "drinks": [
+        {
+            "Menu Item": "Color-Changing Lemonade Slushies",
+            "Ingredients": {
+                "Tea": "4 teaspoons blue pea flower tea",
+                "Water": "2 cups boiling water",
+                "Lemonade": "2 cups lemonade"
+            },
+            "Description": "Kids and adults alike will be wowed watching this delicious sluch turn from blue to pink and purple in an instant. The magical concoction is made with natural blue tea and refreshing lemonade for a fun science experiment that's tasty too. Perfect for your child's birthday party!"
+        },
 
+        {
+            "Menu Item": "Creamy Watermelon Smoothie",
+            "Ingredients": {
+                "Watermelon": "2 cups chopped seedless watermelon, plus watermelon wedges for garnish", 
+                "Banana": "1 small banana (about 5 ounces)",
+                "Strawberries": "3/4 cups fresh strawberries, hulled and halved",
+                "Yogurt": "1/2 cup unsweetened coconut-milk yogurt (such as So Delicious)",
+                "Honey": "2 teaspoons agave syrup or honey",
+                "Salt": "1/8 teaspoon salt"
+            },
+            "Description": "This creamy vegan watermelon smoothie has a subtle coconut flavor thanks to coconut-milk yogurt. Strawberries add color and banana adds a smooth texture while letting the watermelon flavor shine through."
+        }
     ]
 }
