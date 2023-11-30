@@ -1,0 +1,57 @@
+{
+    "appetizers": [
+        {
+            "Menu Item": "Teriyaki Meatballs",
+            "Ingredients": {
+                "pineapple": "2 cans (8 ounces each) pineapple chunks",
+                "Onions": "1 medium onion, finely chopped",
+                "yellow Peppers": "1/4 cup finely chopped sweet yellow pepper",
+                "Red Peppers": "1/4 cup finely chopped sweet red pepper",
+                "Ginger": "1/2 teaspoon ground ginger",
+                "Salt": "1/4 teaspoon salt",
+                "Sauce": "Delicious Homeade Sause",
+                "Canola Oil": "1/4 cup canola oil",
+                "Soy Sauce": "1/4 cup soy sauce",
+                "Honey": "3 tablespoons honey",
+                "Vinegar": "2 tablespoons vinegar",
+                "Garlic Powder": "3/4 teaspoon garlic powder",
+                "Ginger-Sauce": "1/2 teaspoon ground ginger",
+                "Green Onions": "These are optional"
+            },
+            "Description": "This appetizer of teriyaki meatballs changed so many times due to my family's suggestions that it eventually became a main course. I think the homemade sauce sets these meatballs apart -- Evette Nowicki, Oak Harbor, Washington"
+        },
+
+        {
+            "Menu Item": "Chicken Parmesan Slider Bake",
+            "Ingredients": {
+                "Chicken": "24 ounces frozen breaded chicken tenders",
+                "Bread": "1 package (12 ounces) Hawaiian sweet rolls",
+                "Cheese": "14 slices provolone chesse, divided",
+                "Sauce": "1 jar (24 ounces) marinara sauce",
+                "Topping": "Homeade Topping for the Hawaiian Rolls",
+                "Butter": "1/2 cup butter, cubed",
+                "Garlic Powder": "1 teaspoon galic powder",
+                "Red Pepper": "1 teaspoon crushed red pepper flakes",
+                "Parmesan": "1/4 cup grated parmesan cheese",
+                "Basil-Fresh": "2 tablespoons minced fresh basil"
+            },
+            "Description": "Sliders are the perfect finger food for any get-together, and this flavorful chicken parmesan version won't disappoint -- Nick Iverson, Denver, Colorado"
+        }
+    ],
+
+    "cold sandwiches": [
+
+    ],
+
+    "hot sandwiches": [
+
+    ],
+
+    "desserts": [
+
+    ],
+
+    "drinks": [
+        
+    ]
+}
