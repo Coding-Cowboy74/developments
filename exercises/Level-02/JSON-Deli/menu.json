@@ -73,7 +73,34 @@
     ],
 
     "hot sandwiches": [
+        {
+            "Menu Item": "The Ultimate Philly Cheesesteak",
+            "Ingredients": {
+                "Steak": "1 1/2 pounds boneless top round or flank steak",
+                "Soy Sauce": "2 tablespoons reduced-sodium soy sauce",
+                "Vegetable Oil": "1 tablespoon vegetable oil",
+                "Onions": "1/2 large yellow onion, thinly sliced",
+                "Cheese": "3 ounces (about 3 slices) Cooper White cheese",
+                "Bread": "4 hoagie rolls about 6 inches long, halved lengthwise"
+            },
+            "Description": "The Philly cheesesteak. It's not just a sandwich. It's downright iconic. Just about the only thing that can make this masterpiece of culinary invention even better is making it with plenty of Cooper Sharp. Try your Philly with that extra kick of Cooper flavor and you'll never want it any other way."
+        },
 
+        {
+            "Menu Item": "Hot Pastrami and Cheese Panini",
+            "Ingredients": {
+                "Butter": "1 1/2 tablespoons unsalted butter",
+                "Onions": "1 small onion, thinkly sliced", 
+                "Salt": "kosher salt and freshly ground pepper to taste",
+                "Sugar": "1 teaspoon sugar",
+                "Beef": "2 ounces deli-shaved pastrami/corned beef",
+                "Worcestershire": "2 teaspoons worcestershire sauce",
+                "Mustard": "1 tablespoon whole-grain mustard",
+                "Cheese": "4 slices Cooper Sharp White cheese",
+                "Bread": "4 slices pumpernickel or dark ry bread"
+            },
+            "Description": "The pastrami on rye is about as iconic as sandwiches get. Its roots go deep -- created in 1888 at one of New York City's first delis. Maybe that's why it goes so great with Cooper Sharp. Because Cooper's been making mouths water itself since 1893. Put these two on a plate together and that's more than 250 years of tasty history staring you in the face. That's hard to argue with."
+        }
     ],
 
     "desserts": [
