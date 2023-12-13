@@ -14,7 +14,7 @@ console.log(doubleNumbers([2, 5, 100]))
 function stringItUp(arr){
     // your code here
     const numsToStrings = arr.map(function(num) {
-        return "" + num;
+        return num.toString();
     })
     return numsToStrings;
   }
@@ -27,7 +27,7 @@ function stringItUp(arr){
 function capitalizeNames(arr){
     // your code here 
     const capNames = arr.map(function(name) {
-        return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+        return name[0].toUpperCase() + name.slice(1).toLowerCase();
     })
     return capNames;
   }
