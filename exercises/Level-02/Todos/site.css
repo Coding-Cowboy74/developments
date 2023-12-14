@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*   Elements Styling    */
 body {
     background-color: beige;
     max-width: 90%;
@@ -12,6 +13,19 @@ img {
     width: 100px;
 }
 
+input[type=text] {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+/*   Class Styling    */
 .card {
     background-color: white;
 }
@@ -20,7 +34,21 @@ img {
     display: flex;
 }
 
+
+
+/*   ID Styling    */
+
 #left-aligning {
     text-align: left;
-    
 }
+
+#textUrl {
+    width: 30%;
+}
+
+#descText {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
