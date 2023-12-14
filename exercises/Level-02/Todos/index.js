@@ -31,7 +31,7 @@ axios.get("https://api.vschool.io/stevenmartin/todo")
 
             //  Here is the setting attributes of elements area
             chkbx.setAttribute("type", "checkbox");
-            chkbx.checked = data[i].competed;
+            chkbx.checked = data[i].completed;
 
             // Here is the area for setting the text or retrieving of data for text displaying 
             imgs.src = data[i].imgUrl;
@@ -46,6 +46,47 @@ axios.get("https://api.vschool.io/stevenmartin/todo")
             detailsDiv.append(h2, price, desc, btnDel)
             //document.getElementById("img-side").append(imgs);
             document.getElementById("details-side").append(chkbx, imgDiv, detailsDiv);
+
+            // Checking to see from the supplied data if the completed property is set to true on load 
+            // we need to be sure that the item(s) are bing loaded with a strike through the item(s). 
+            // Otherwise the item(s) will remain unaltered 
+            if (chkbx.checked === true) {
+                h2.style.textDecoration = "line-through";       //  <---- on load strike the item name
+            } else {
+                h2.style.textDecoration = "none";               //  <---- on load if not completed leave alone. 
+            }
+
+
+
+            // Part 3 PUT REQUEST 
+            //      Each Todo will have a checkbox where it can be marked as complete or incomplete 
+            //      Checking the checkbox should update the database
+            
+            chkbx.addEventListener("click", (e) => {
+
+                if (chkbx.checked === false) {      //  If item(s) are checked then
+
+                    axios.put("https://api.vschool.io/stevenmartin/todo/" + data[i]._id, {completed: false})
+
+                    .then( res =>{
+                        h2.style.textDecoration = "none";       //  <---- Make sure the item is left alone no strike through 
+                    } )
+
+                    .catch(err => console.log(err))         //  catch the error 
+                }
+
+                else {
+
+                    axios.put("https://api.vschool.io/stevenmartin/todo/" + data[i]._id, {completed: true})
+
+                    .then( res => {
+                        console.log(res);
+                        h2.style.textDecoration = "line-through";   //  <---- Make sure the item has a strike through
+                    })
+
+                    .catch(err => console.log(err))     //  catch the error
+                }
+            })
             
         }
     }
