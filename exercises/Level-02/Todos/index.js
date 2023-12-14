@@ -7,6 +7,27 @@
 // - if a todo item is complete, it should have a strikethrough line in it
 // - Imgages should be displayed if there are any
 
+const btnAdd = document.getElementById("btnAdd");
+const btnClear = document.getElementById("btnClear");
+let title = document.getElementById("title");
+let price = document.getElementById("itemPrice");
+let URL = document.getElementById("textUrl");
+let itemDesc = document.getElementById("descText");
+
+btnClear.addEventListener("click", (e) => {
+    title.textContent = "";
+    price.textContent = "";
+    URL.textContent = "";
+    itemDesc.textContent = "";
+});
+btnAdd.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let newTodo = {
+        title: title.value
+    }
+})
+
 axios.get("https://api.vschool.io/stevenmartin/todo")
     .then(res => {
         console.log(res.data);
@@ -14,6 +35,8 @@ axios.get("https://api.vschool.io/stevenmartin/todo")
     })
 
     .catch(err => console.log(err))
+
+
 
     function displayFoodList(data) {
 
@@ -61,7 +84,7 @@ axios.get("https://api.vschool.io/stevenmartin/todo")
             // Part 3 PUT REQUEST 
             //      Each Todo will have a checkbox where it can be marked as complete or incomplete 
             //      Checking the checkbox should update the database
-            
+
             chkbx.addEventListener("click", (e) => {
 
                 if (chkbx.checked === false) {      //  If item(s) are checked then
