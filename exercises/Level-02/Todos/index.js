@@ -19,13 +19,21 @@ axios.get("https://api.vschool.io/stevenmartin/todo")
 
         for (let i = 0; i < data.length; i++) {
 
+            //  Here is is the list of newly created elements that will be injected into the DOM
             const imgs = document.createElement("img");
-            const chkbx = document.createElement("checkbox");
+            const chkbx = document.createElement("input");
             const h2 = document.createElement("h2");
             const price = document.createElement("p");
             const desc = document.createElement("p");
             const btnDel = document.createElement("button");
+            const detailsDiv = document.createElement("div");
+            const imgDiv = document.createElement("div");
 
+            //  Here is the setting attributes of elements area
+            chkbx.setAttribute("type", "checkbox");
+            chkbx.checked = data[i].competed;
+
+            // Here is the area for setting the text or retrieving of data for text displaying 
             imgs.src = data[i].imgUrl;
             chkbx.textContent = "";
             h2.textContent = data[i].title;
@@ -33,8 +41,11 @@ axios.get("https://api.vschool.io/stevenmartin/todo")
             desc.textContent = data[i].description;
             btnDel.textContent = "X";
 
-            document.getElementById("img-side").append(imgs);
-            document.getElementById("details-side").append(chkbx, h2, price, desc, btnDel);
+            //  Here is where all the elements are being appended (added) to the DOM for us to see
+            imgDiv.append(imgs);
+            detailsDiv.append(h2, price, desc, btnDel)
+            //document.getElementById("img-side").append(imgs);
+            document.getElementById("details-side").append(chkbx, imgDiv, detailsDiv);
             
         }
     }

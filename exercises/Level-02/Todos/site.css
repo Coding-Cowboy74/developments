@@ -25,14 +25,24 @@ header {
     margin-bottom: 30px;
 }
 
+hr {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
 /*   Class Styling    */
 .card {
     background-color: white;
+    border: 2px solid black;
+    
+    margin-left: 100px;
+    
 }
 
-.details-side {
-    display: flex;
+.details {
+    max-width: 100px; 
 }
+
 
 
 
