@@ -13,19 +13,32 @@ let title = document.getElementById("title");
 let price = document.getElementById("itemPrice");
 let URL = document.getElementById("textUrl");
 let itemDesc = document.getElementById("descText");
+const todoform = document.todoForm;
 
 btnClear.addEventListener("click", (e) => {
-    title.textContent = "";
+    title.value = "";
     price.textContent = "";
     URL.textContent = "";
     itemDesc.textContent = "";
 });
-btnAdd.addEventListener("submit", (e) => {
+
+todoform.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let newTodo = {
-        title: title.value
+    const newTodo = {
+        title: todoform.itemTitle.value,
+        price: todoform.itemPrice.value,
+        imgUrl: todoform.itemUrl.value,
+        description: todoform.itemDesc.value
     }
+
+    axios.post("https://api.vschool.io/stevenmartin/todo", newTodo)
+        .then(res => {
+            console.log(res.data)
+            displayFoodList(res.data);
+        })
+
+        .catch(err => console.log(err))
 })
 
 axios.get("https://api.vschool.io/stevenmartin/todo")
@@ -79,7 +92,14 @@ axios.get("https://api.vschool.io/stevenmartin/todo")
                 h2.style.textDecoration = "none";               //  <---- on load if not completed leave alone. 
             }
 
+            btnDel.addEventListener("click", (e) => {
+                axios.delete("https://api.vschool.io/stevenmartin/todo/" + data[i]._id)
+                    .then(res => {
+                        console.log(res.data)
+                    })
 
+                    .catch(err => console.log(err))
+            })
 
             // Part 3 PUT REQUEST 
             //      Each Todo will have a checkbox where it can be marked as complete or incomplete 

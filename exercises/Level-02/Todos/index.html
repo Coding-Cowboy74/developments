@@ -20,12 +20,12 @@
 
     </header>
     <main>
-        <form>
+        <form name="todoForm">
             <div id="input-fields">
-                Title: <input id="Title" type="text">
-                Price: <input id="itemPrice" type="number"><br>
-                Image URL: <input id="textUrl" type="text"><br>
-                <span id="left-aligning">Product Description:</span> <textarea id="descText" rows="5" cols="50"></textarea><br>
+                Title: <input id="Title" type="text" name="itemTitle">
+                Price: <input id="itemPrice" type="number" name="itemPrice"><br>
+                Image URL: <input id="textUrl" type="text" name="itemUrl"><br>
+                <span id="left-aligning">Product Description:</span> <textarea id="descText" name="itemDesc" rows="5" cols="50"></textarea><br>
                 <button id="btnAdd">Add Item</button>
                 <button id="btnClear">Clear Form</button>
             </div>
