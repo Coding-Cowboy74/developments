@@ -38,7 +38,7 @@ function displayFoodList(data) {
 
         //  Here is where all the newly created and defined elements are going to be add to the DOM for viewing purposes.
         
-        document.getElementById("details-side").append(imgs, h2, price, desc, btnDel);
+        document.getElementById("details-side").append(imgs, chkbx, h2, price, desc, btnDel);
 
         //  Here we are checking to see from the supplied data if the completed property is set to tur on a load.
         //  We need to be sure that the item(s) are being loaded with a strike-through in the items text. 
