@@ -1,3 +1,8 @@
+const myTodo = document.todoForm;       //  variable for the form to create a new todo item
+const price = document.getElementById("itemPrice");
+const imgURL = document.getElementById("textUrl");
+const itemDesc = document.getElementById("descText");
+
 function getData() {
     axios.get("https://api.vschool.io/stevenmartin/todo/")
         .then( res => {
@@ -49,7 +54,10 @@ function displayFoodList(data) {
         btnDel.addEventListener("click", (e) => {
             axios.delete("https://api.vschool.io/stevenmartin/todo/" + data[i]._id)
 
-                .then(res => console.log(res.data))
+                .then(res => {
+                    console.log(res.data);
+                
+                })
 
                 .catch(err => console.log(err))
         })
@@ -83,3 +91,22 @@ function displayFoodList(data) {
     }
 }
 getData();
+
+myTodo.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const newTodo = {
+        title: myTodo.itemTitle.value,
+        price: myTodo.itemPrice.value,
+        imgUrl: myTodo.itemUrl.value,
+        description: myTodo.itemDesc.value
+
+    }
+
+    axios.post("https://api.vschool.io/stevenmartin/todo", newTodo)
+
+        .then(res => {
+            console.log(res.data);
+            
+        })
+})
