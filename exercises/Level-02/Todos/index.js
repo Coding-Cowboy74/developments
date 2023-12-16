@@ -34,6 +34,52 @@ function displayFoodList(data) {
         //  Here is where all the newly created and defined elements are going to be add to the DOM for viewing purposes.
         
         document.getElementById("details-side").append(imgs, h2, price, desc, btnDel);
+
+        //  Here we are checking to see from the supplied data if the completed property is set to tur on a load.
+        //  We need to be sure that the item(s) are being loaded with a strike-through in the items text. 
+        //  Otherwise the item(s) will remain unaltered.  
+        if (chkbx.checked === true) {
+            h2.style.textDecoration = "line-through";       // <----    on load strike-through the items text
+        } else {
+            h2.style.textDecoration = "none";               // <----    on load leave the text alone
+        }
+
+
+        //PART 2 DELETE REQUEST
+        btnDel.addEventListener("click", (e) => {
+            axios.delete("https://api.vschool.io/stevenmartin/todo/" + data[i]._id)
+
+                .then(res => console.log(res.data))
+
+                .catch(err => console.log(err))
+        })
+
+        // PART 3 PUT REQUEST
+        //  Each todo will have a separate checkbox, this way it can be checked and amost being check the items name will 
+        //  be marked as a completed item, via by having a strike-through line through the items text. 
+        chkbx.addEventListener("click", (e) => {
+            //  Now here we are checking to from the supplied data if the completed is true or false and checking that check box
+            //  based on that value in JSON data.
+            if (chkbx.checked === false) {
+                axios.put("https://api.vschool.io/stevenmartin/todo/" + data[i]._id, {completed: false})
+
+                    .then(res => {
+                        console.log(res.data);      //  log the data 
+                        h2.style.textDecoration = "none";           //  <----   Make sure that the text is left alone
+                    })
+
+                    .catch(err => console.log(err))         // catch the error 
+            } else {
+                axios.put("https://api.vschool.io/stevenmartin/todo/" + data[i]._id, {completed: true})
+
+                    .then(res => {
+                        console.log(res.data);      //  log the data 
+                        h2.style.textDecoration = "strike-through";     //  <----   Make sure that there a strike-through line
+                    })
+
+                    .catch(err => console.log(err))             //  catch the error 
+            }
+        })
     }
 }
 getData();
