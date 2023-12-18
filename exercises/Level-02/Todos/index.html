@@ -10,26 +10,38 @@
     <script src="index.js" defer></script>
 
     <!--    Here is the external links for the fonts that are being used via Google Fonts   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
     <!--    Here is the actual sites CSS file for sites styling purposes    -->
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
+    <header>
+        <h1>Groceries List Todo's</h1>
+    </header>
     <main>
         <section id="addingForm">
             <form name="todoForm">
-                Title: <input id="Title" type="text" name="itemTitle">
-                Price: <input id="itemPrice" type="text" name="itemPrice"><br>
-                Image URL: <input id="textUrl" type="text" name="itemUrl"><br>
-                <span id="left-aligning">Product Description:</span> <textarea id="descText" name="itemDesc" rows="5" cols="50"></textarea><br>
-                <button id="btnAdd">Add Item</button>
-                <button id="btnClear">Clear Form</button>
+                <fieldset>
+                    <legend>Adding an Item</legend>
+                        <span>Title:</span> <input id="Title" type="text" name="itemTitle">
+                        <span>Price:</span> <input id="Price" type="text" name="itemPrice"><br>
+                        <span>Image URL:</span> <input id="textUrl" type="text" name="itemUrl"><br>
+                        <span id="left-aligning">Product Description:</span> <textarea id="descText" name="itemDesc" rows="5" cols="50"></textarea><br>
+                        <button id="btnAdd" class="bottomButtons">Add Item</button>
+                        <button id="btnClear">Clear Form</button>
+                </fieldset>
             </form>
         </section>
-        <hr>
-        <section>
+    
+        <section class="bottomArea">
             <div id="list-view" class="grid-view grid-item">
-                <form name="resultForm">
+                <form name="resultForm" id="results">
                     <div id="resultsContainer">
                         
                     </div>
@@ -38,5 +50,8 @@
             </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

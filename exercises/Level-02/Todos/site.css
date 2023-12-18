@@ -24,7 +24,29 @@ button {
 }
 
 header {
-    margin-bottom: 30px;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    background-image: linear-gradient(gray, black);
+    margin: 30px 0 30px 200px;
+}
+
+header h1 {
+    text-align: center;
+    transform: rotate(-15deg);
+    text-shadow: 2px 3px 10px #ff0000;
+    font-size: 3em;
+    padding-top: 60px;
+    font-family: 'Abril Fatface', serif;
+}
+
+legend {
+    text-align: left;
+    size: 18px;
+    font-family: 'Abril Fatface', serif;
+}
+
+fieldset {
+    margin-left: 100px;
 }
 
 hr {
@@ -32,6 +54,24 @@ hr {
     margin-bottom: 50px;
 }
 
-.btnDel {
-    color: red;
+span {
+    font-family: 'Abril Fatface', serif;
+}
+
+.bottomButtons {
+    margin: 20px 0;
+}
+
+.bottomArea {
+    border: 2px double black;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+#textUrl {
+    width: 350px;
+}
+
+#results {
+    margin: 40px 30px 20px 30px;
 }

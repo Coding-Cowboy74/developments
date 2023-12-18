@@ -2,6 +2,7 @@ const myTodo = document.todoForm;       //  variable for the form to create a ne
 const price = document.getElementById("itemPrice");
 const imgURL = document.getElementById("textUrl");
 const itemDesc = document.getElementById("descText");
+const btnClear = document.getElementById("btnClear");
 
 function getData() {
     axios.get("https://api.vschool.io/stevenmartin/todo/")
@@ -29,6 +30,7 @@ function displayFoodList(data) {
         chkbx.setAttribute("type", "checkbox");
         chkbx.checked = data[i].completed;
         
+        //  CSS Styling taking place here in JavaScript 
         btnDel.style.margin = "10px 10px 60px 10px";
         btnDel.style.padding = "10px 10px 10px 10px";
 
@@ -97,6 +99,11 @@ function displayFoodList(data) {
     }
 }
 
+//  The clearlist function is and only has one real purpose here. What we need to do is to clear the list being displayed on the 
+//  system, if there is a list being displayed that is. 
+
+//  Otherwise what would happen if you had a list being displayed alread, it would just append to the already display list of data. 
+//  We want it to start over from scratch so to speak.
 function clearList() {
     const el = document.getElementById("list-view");
     while (el.firstChild) {
@@ -104,6 +111,17 @@ function clearList() {
     }
 }
 getData();
+
+//  The clear or reset button, all it is meant to do is to clear any the input fields that have any type of data or text 
+//  in the form. Then the user will get a message from the computer about needing to add the data again to be able to save one.
+btnClear.addEventListener("click", (e) => {
+    myTodo.Title.value = "";
+    myTodo.Price.value = "";
+    myTodo.textUrl.value = "";
+    myTodo.descText.value = "";
+
+    alert("You have cleared the information and cannot save a new item, please add all the details!");
+})
 
 myTodo.addEventListener("submit", (e) => {
     e.preventDefault();
