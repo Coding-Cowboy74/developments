@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo's List</title>
+    <title>Groceries List Todo's</title>
 
     <!--    Here are the JavaScript files, both the sites JavaScript and the Axios JS   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" defer></script>
@@ -13,37 +13,30 @@
 
     <!--    Here is the actual sites CSS file for sites styling purposes    -->
     <link rel="stylesheet" href="site.css">
-
 </head>
 <body>
-    <header>
-        <h1>Groceries List TODO's</h1>
-    </header>
     <main>
-        <form name="todoForm">
-            <div id="input-fields">
+        <section id="addingForm">
+            <form name="todoForm">
                 Title: <input id="Title" type="text" name="itemTitle">
-                Price: <input id="itemPrice" type="number" name="itemPrice"><br>
+                Price: <input id="itemPrice" type="text" name="itemPrice"><br>
                 Image URL: <input id="textUrl" type="text" name="itemUrl"><br>
                 <span id="left-aligning">Product Description:</span> <textarea id="descText" name="itemDesc" rows="5" cols="50"></textarea><br>
                 <button id="btnAdd">Add Item</button>
                 <button id="btnClear">Clear Form</button>
-            </div>
-        </form>
-
-        <hr>
-
-        <section>
-            <div id="list-view">
-                <div class="card">
-                    <div class="details" id="details-side">
-
-                    </div> 
-                </div>
-            </div>
-            
+            </form>
         </section>
-
+        <hr>
+        <section>
+            <div id="list-view" class="grid-view grid-item">
+                <form name="resultForm">
+                    <div id="resultsContainer">
+                        
+                    </div>
+                   
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

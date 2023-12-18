@@ -22,23 +22,29 @@ function displayFoodList(data) {
         const price = document.createElement("p");
         const desc = document.createElement("p");
         const btnDel = document.createElement("button");
-        const detailsDiv = document.createElement("div");
+        const selDiv = document.createElement("div");
+        const endDiv = document.createElement("div");
 
         //  Here we are setting the attributes to the certian elements that need them defined. 
         chkbx.setAttribute("type", "checkbox");
         chkbx.checked = data[i].completed;
+        
+        btnDel.style.margin = "10px 10px 60px 10px";
+        btnDel.style.padding = "10px 10px 10px 10px";
 
         //  Here we are setting the text or displaying details to be shown, this is and will be based off of what the 
         //  JSON database is saying that it will be. Being that all this data is coming from JSON. 
         imgs.src = data[i].imgUrl;
         h2.textContent = data[i].title;
-        price.textContent = data[i].price;
+        price.textContent = "$" + data[i].price;
         desc.textContent = data[i].description;
         btnDel.textContent = "X";
 
         //  Here is where all the newly created and defined elements are going to be add to the DOM for viewing purposes.
+        selDiv.append(chkbx, h2);
+        endDiv.append(price, desc, btnDel);
+        document.getElementById("resultsContainer").append(imgs, selDiv, endDiv);
         
-        document.getElementById("details-side").append(imgs, chkbx, h2, price, desc, btnDel);
 
         //  Here we are checking to see from the supplied data if the completed property is set to tur on a load.
         //  We need to be sure that the item(s) are being loaded with a strike-through in the items text. 
@@ -56,7 +62,7 @@ function displayFoodList(data) {
 
                 .then(res => {
                     console.log(res.data);
-                
+                    getData();
                 })
 
                 .catch(err => console.log(err))
@@ -90,6 +96,13 @@ function displayFoodList(data) {
         })
     }
 }
+
+function clearList() {
+    const el = document.getElementById("list-view");
+    while (el.firstChild) {
+        el.removeChild(el.firstChild);
+    }
+}
 getData();
 
 myTodo.addEventListener("submit", (e) => {
@@ -107,6 +120,6 @@ myTodo.addEventListener("submit", (e) => {
 
         .then(res => {
             console.log(res.data);
-            
+            getData();
         })
 })
