@@ -46,7 +46,7 @@ legend {
 }
 
 fieldset {
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 hr {
@@ -58,14 +58,53 @@ span {
     font-family: 'Abril Fatface', serif;
 }
 
+ul li a{
+    text-decoration: none;
+    margin-left: 80px;
+    padding-right: 70px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 14px;
+    
+}
+
+h3 {
+    margin-left: 80px;
+    padding-right: 6rem;
+}
+
+footer {
+    background-color: hsl(60, 20%, 55%);
+    width: 100%;
+    margin: 10px 100px;
+    padding: 20px 50px;
+    font-family: 'Abril Fatface', serif;
+    font-size: smaller;
+}
+
 .bottomButtons {
     margin: 20px 0;
 }
 
 .bottomArea {
     border: 2px double black;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-heading {
+    margin-left: 200px;
+    padding-right: 10rem;
 }
 
 #textUrl {
