@@ -3,6 +3,7 @@ const price = document.getElementById("itemPrice");
 const imgURL = document.getElementById("textUrl");
 const itemDesc = document.getElementById("descText");
 const btnClear = document.getElementById("btnClear");
+const resultsContainer = document.getElementById("resultsContainer")
 
 function getData() {
     axios.get("https://api.vschool.io/stevenmartin/todo/")
@@ -15,16 +16,21 @@ function getData() {
 }
 
 function displayFoodList(data) {
+    console.log("test-fire")
     //  Here we are creating the new elements that are going to be needed to be used for displaying purposes into the DOM object. 
+    clearList();
+
     for (let i = 0; i < data.length; i++) {
+        const div = document.createElement("div")
+        resultsContainer.appendChild(div)
         const imgs = document.createElement("img");
         const chkbx = document.createElement("input");
         const h2 = document.createElement("h2");
         const price = document.createElement("p");
         const desc = document.createElement("p");
         const btnDel = document.createElement("button");
-        const selDiv = document.createElement("div");
-        const endDiv = document.createElement("div");
+        // const selDiv = document.createElement("div");
+        // const endDiv = document.createElement("div");
 
         //  Here we are setting the attributes to the certian elements that need them defined. 
         chkbx.setAttribute("type", "checkbox");
@@ -41,13 +47,21 @@ function displayFoodList(data) {
         price.textContent = "$" + data[i].price;
         desc.textContent = data[i].description;
         btnDel.textContent = "X";
+        h2.className = "h2styles";
+
+        div.appendChild(imgs)
+        div.appendChild(chkbx)
+        div.appendChild(h2)
+        div.appendChild(price)
+        div.appendChild(desc)
+        div.appendChild(btnDel)
 
         //  Here is where all the newly created and defined elements are going to be add to the DOM for viewing purposes.
-        selDiv.append(chkbx, h2);
-        endDiv.append(price, desc, btnDel);
-        document.getElementById("resultsContainer").append(imgs, selDiv, endDiv);
+        // selDiv.append(chkbx, h2);
+        // endDiv.append(price, desc, btnDel);
+        // document.getElementById("resultsContainer").append(imgs, selDiv, endDiv);
         
-
+   
         //  Here we are checking to see from the supplied data if the completed property is set to tur on a load.
         //  We need to be sure that the item(s) are being loaded with a strike-through in the items text. 
         //  Otherwise the item(s) will remain unaltered.  
@@ -68,6 +82,7 @@ function displayFoodList(data) {
                 })
 
                 .catch(err => console.log(err))
+                div.remove()
         })
 
         // PART 3 PUT REQUEST
@@ -125,6 +140,7 @@ btnClear.addEventListener("click", (e) => {
 
 myTodo.addEventListener("submit", (e) => {
     e.preventDefault();
+    console.log("submit-fire")
 
     const newTodo = {
         title: myTodo.itemTitle.value,
@@ -140,4 +156,5 @@ myTodo.addEventListener("submit", (e) => {
             console.log(res.data);
             getData();
         })
+        .catch(err => console.log(err))
 })
