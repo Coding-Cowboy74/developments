@@ -11,14 +11,23 @@
 */
 
 function solution(arr){
+    let sortedArr = [... arr];
 
+    sortedArr = sortedArr.filter(x => x != -1).sort((a, b) => a - b);
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === -1) {
+            sortedArr.splice(i, 0, -1);
+        }
+    }
+    return sortedArr;
 }
-
-//console.log(solution([-1, 150, 190, 170, -1, -1, 160, 180]))
-//console.log(solution([5, 3, 1]))
-//console.log(solution([-1, -1, -1, -1]))
-//console.log(solution([100, -1, 50, -1, 75]))
-
+/*
+console.log(solution([-1, 150, 190, 170, -1, -1, 160, 180]))
+console.log(solution([5, 3, 1]))
+console.log(solution([-1, -1, -1, -1]))
+console.log(solution([100, -1, 50, -1, 75]))
+*/
 
 
 /* 
