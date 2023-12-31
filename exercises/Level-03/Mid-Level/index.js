@@ -11,10 +11,13 @@
 */
 
 function solution(arr){
+    //  making a new copy of the original array 
     let sortedArr = [... arr];
 
+    //  finding the -1 values and filtering those values out of the array. 
     sortedArr = sortedArr.filter(x => x != -1).sort((a, b) => a - b);
 
+    //  Looping through the array and splicing back in the -1 values based on there indicies.
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === -1) {
             sortedArr.splice(i, 0, -1);
@@ -39,11 +42,29 @@ console.log(solution([100, -1, 50, -1, 75]))
     Implement the countVowels function using either the provided example solutions or your own solution. 
 */
 
-const input = 'Hello, World!';
+//  Here are the data and the console log to run the function 
+const input1 = "Hello World";
+//console.log(countVowels(input1));
+//  Here are the data and the console log to run the function 
+const input2 = "Counting Vowels";
+//console.log(countVowels(input2));
 
-//console.log(countVowels(input)); // Output: 3
 
+function countVowels(arr) {
+    
+    let counter = 0;        //  <-- setting the counter to zero, will be incrementing per finding a new vowel
 
-const newInput = 'Counting Vowels';
+    let vowels = "aeiou";       //  <-- setting up the data that we are currently looking for, in this case it is all/any vowels 
 
-//console.log(countVowels(input)); // Output: 5
+    for (let char of arr) {     //  <-- Here we are loopikng through the arr looking at each character in the arr
+
+        char = char.toLowerCase();      //  <-- making sure all characters are going to be that of the low case characters. 
+
+        if (vowels.includes(char)) {        //  <-- checking each character and if it is a vowel, increase the counter by 1
+            counter++;      //  <-- Imcrementing the counter each time we find a vowel
+        }
+    }
+    //  Let us go ahead and return the number of the count
+    return counter;
+}
+
