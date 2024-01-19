@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import Data from './Data'
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 function App() {
   
   console.log(Data);
   return (
     <div>
-      <Navbar />
+      <Header />
     </div>
   )
 }
