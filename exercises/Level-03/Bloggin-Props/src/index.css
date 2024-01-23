@@ -85,5 +85,11 @@ a {
     margin-left: 38rem;
 }
 
+.social-icons {
+    color: black;
+}
 
+.social-icons:hover {
+    color: #0085a1;
+}
 
