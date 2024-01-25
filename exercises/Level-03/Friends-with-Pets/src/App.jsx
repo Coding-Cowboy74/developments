@@ -6,7 +6,7 @@ function App() {
   const friendsList = friendsData.map((friend, index) => {
     //console.log(friend)
     return <Friend 
-      key={index}
+      key={friend.ID}
       name={friend.name}
       age={friend.age}
       pets={friend.pets}

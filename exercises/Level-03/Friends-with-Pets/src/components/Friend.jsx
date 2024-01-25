@@ -5,10 +5,11 @@ function Friend(props) {
     
     
     const petsList = props.pets.map((pet, index) => {
+        console.log(props.pets)
         return (
             <div>
-                <pet 
-                    key={index}
+                <Pets 
+                    key={pet.ID}
                     name={pet.name}
                     breed={pet.breed}
                 />
