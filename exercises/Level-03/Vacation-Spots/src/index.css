@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #6962AD;
+    color: #F3EEEA;
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 2.75rem;
+}
+
+.last-element {
+    margin-bottom: 5rem;
+}
