@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/*      HTML COMPONENTS     */
+h1 {
+    text-align: center;
+}
+
+/*      CSS CLASSES     */
+.instruct {
+    text-align: center;
+}
