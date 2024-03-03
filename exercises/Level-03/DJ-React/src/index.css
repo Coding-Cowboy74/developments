@@ -12,3 +12,47 @@ h1 {
 .instruct {
     text-align: center;
 }
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    grid-gap: .5rem;
+    margin-left: 35rem;
+    margin-top: 5rem;
+    
+    background-color: black;
+    width: 370px;
+}
+
+.gridItem {
+    color: white;
+    background-color: lightgrey;
+    margin-left: 1.2rem;
+    width: 161px;
+    height: 110px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 2px;
+    width: 100px;
+}
+.groupButtons {
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    margin-left: 3rem;
+    grid-gap: 5px;
+    padding-bottom: 10px;
+}
+
+.footerStyle {
+    text-align: center;
+    background-color: black;
+    height: 70px;
+    color: white;
+    padding-top: 20px;
+}
+
+.copyright {
+    color: lightgrey;
+}
