@@ -1,9 +1,9 @@
 import { useState } from 'react'
-
+import Box from './components/box'
 
 function App() {
-const colorsList = ["white", "white", "white", "white"]
-const [color, setColors] = useState(colorsList)
+
+const [color, setColors] = useState(["white", "white", "white", "white"])
 
   return (
     <div>
@@ -13,6 +13,14 @@ const [color, setColors] = useState(colorsList)
         that you are selecting. 
       </p>
       
+      <div className='boxes'>
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+      </div>
+      
+
       <p className='footerStyle'>
         Created by SJ Martin copyright <span className='copyright'>&copy;</span> 2024 - SJ Web Designs Inc. 
       </p>

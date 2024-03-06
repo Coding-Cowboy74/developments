@@ -29,4 +29,10 @@ h1 {
     width: 200px;
     height: 200px;
     border: 1px solid #000;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.boxes {
+    margin-left: 16rem;
 }
