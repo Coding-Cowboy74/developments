@@ -36,3 +36,14 @@ h1 {
 .boxes {
     margin-left: 16rem;
 }
+
+button {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+}
+
+.grpButtons {
+    width: 75%;
+    margin-left: 14rem;
+}

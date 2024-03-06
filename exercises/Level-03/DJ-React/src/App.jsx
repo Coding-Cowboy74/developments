@@ -6,6 +6,7 @@ function App() {
 const [color, setColors] = useState(["white", "white", "white", "white"])
 //console.log(state)
 
+const listColors = color.map((arrColor, index) => <Box background={arrColor} />)
 
 const changeColor = () => {
 }
@@ -81,15 +82,17 @@ const botRight = () => {
       </p>
 
       <div className='boxes'>
-        <Box background={color[0]}/>
+        {/* <Box background={color[0]}/>
         <Box background={color[1]}/>
         <Box background={color[2]}/>
-        <Box background={color[3]}/>
+        <Box background={color[3]}/> */}
+
+        {listColors}
       </div>
       
-      <div>
-        <button onClick={changeColor}>Change Color</button>
-        
+      <div className='grpButtons'>
+        {/* <button onClick={changeColor}>Change Color</button> */}
+
         <button onClick={smallTimeDJ}>Small Time DJ</button>
         <button onClick={purpleDJ}>Purple DJ</button>
 
